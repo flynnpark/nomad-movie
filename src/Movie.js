@@ -22,7 +22,7 @@ class Movie extends Component {
 class MoviePoster extends Component {
 
     static propTypes = {
-        poster: PropTypes.stirng.isRequired
+        poster: PropTypes.string.isRequired
     }
 
     render() {
