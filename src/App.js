@@ -15,7 +15,11 @@ class App extends Component {
 
     _renderMovies = () => {
         const movies = this.state.movies.map(movie => {
-            return <Movie title={ movie.title } poster={ movie.large_cover_image } key={ movie.id } />
+            return <Movie key={ movie.id }
+                title={ movie.title_english }
+                poster={ movie.medium_cover_image }
+                genres={ movie.genres }
+                synopsis={ movie.synopsis} />
         }); // 컴포넌트의 key는 인덱스를 사용할 경우 느려진다.
         return movies;
     };
